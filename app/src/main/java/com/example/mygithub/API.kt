@@ -1,10 +1,11 @@
 package com.example.mygithub
 
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface API {
-    @GET("users/khs3994")
-    fun getUserInfo(
+    @GET("users/{userid}")
+    fun getUserInfo(@Path("userid")userid:String
 
     ):retrofit2.Call<UserInfo>
 }
