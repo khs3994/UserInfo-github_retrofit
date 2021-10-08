@@ -18,7 +18,6 @@ class StartActivity : AppCompatActivity() {
             User.id = mbinding.inputid.text.toString()
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
-            finish()
         }
     }
 }

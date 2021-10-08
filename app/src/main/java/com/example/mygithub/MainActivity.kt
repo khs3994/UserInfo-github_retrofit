@@ -41,9 +41,13 @@ class MainActivity : AppCompatActivity() {
                     Log.d("error", t.message.toString())
                 }
             })
-        mbinding.login.setOnClickListener {
+        mbinding.profile.setOnClickListener {//사용자 아이디를 눌렀을때 그 사람의 깃허브로 들어가지는 기능
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/${User.id}"))
             startActivity(intent)
+        }
+
+        mbinding.back.setOnClickListener {//뒤로가기 기능
+            onBackPressed()
         }
     }
 }

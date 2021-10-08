@@ -15,6 +15,7 @@
 
 
     <EditText
+        android:backgroundTint="@color/black"
         android:gravity="center"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
